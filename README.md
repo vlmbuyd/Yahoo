@@ -1,2 +1,1 @@
-# Yahoo
-Yahoo Japan Redesign
+## Yahoo Japan Redesign

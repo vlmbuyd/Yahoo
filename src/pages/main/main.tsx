@@ -8,14 +8,20 @@ export const MainPage = () => {
     <div className="flex flex-col items-center w-full min-h-screen pt-[56px]">
       <Header />
 
-      <div className="flex w-full gap-[40px]">
+      <div className="flex justify-center w-full gap-[40px]">
         <section>
           <SideBar />
         </section>
 
         <section>
           <CategoryNewsList />
-          <img src={bannerAds_1} alt="banner-advertising" />
+          <div className="min-w-[730px] max-w-[764px] h-auto">
+            <img
+              src={bannerAds_1}
+              alt="banner-advertising"
+              className="block w-full object-fill"
+            />
+          </div>
         </section>
 
         <section className="w-[290px] h-[320px] bg-[salmon]"></section>

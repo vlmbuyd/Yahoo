@@ -18,9 +18,11 @@ export const LandingPage = () => {
 
       <section className="flex">
         <div className="flex flex-col">
-          <button className="w-[300px] h-[150px] mr-[50px] mb-[30px] bg-slate-500">
-            페이지네이션 (기본)
-          </button>
+          <Link to="/main">
+            <button className="w-[300px] h-[150px] mr-[50px] mb-[30px] bg-slate-500">
+              페이지네이션 (기본)
+            </button>
+          </Link>
           <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
             더보기
           </button>

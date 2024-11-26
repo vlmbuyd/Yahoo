@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LandingPage } from "@/pages/landing/landing";
 import { MainPage } from "@/pages/main/main";
-import { Layout } from "@/components/common/Layout";
+import { RootLayout } from "@/components/common/RootLayout";
 import { DevelopPage } from "@/pages/develop/develop";
 
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
+      <RootLayout>
         <Routes>
           {/* landing page */}
           <Route path="/" element={<LandingPage />} />
@@ -18,7 +18,7 @@ function App() {
           {/* develop page */}
           <Route path="/develop" element={<DevelopPage />} />
         </Routes>
-      </Layout>
+      </RootLayout>
     </BrowserRouter>
   );
 }

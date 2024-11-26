@@ -5,7 +5,7 @@ import optionIcon from "@/assets/icons/option.svg";
 
 export const Header = () => {
   return (
-    <header className="flex flex-col items-center my-0 mx-auto">
+    <header className="flex flex-col items-center mb-[64px] mx-auto">
       <div className="flex justify-center mb-[30px]">
         <img src={logo} alt="yahoo-jp-logo" />
       </div>

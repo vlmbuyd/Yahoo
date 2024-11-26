@@ -3,7 +3,7 @@ import commentIcon from "@/assets/category-news-feed/comment.svg";
 
 export const CategoryNewsFeed = (feed: CategoryFeedType) => {
   return (
-    <article className="flex w-[331px] h-[96px] cursor-pointer">
+    <article className="flex w-[331px] h-[96px] bg-[white] cursor-pointer">
       <div className="mr-[12px] ">
         <img
           src={feed.imgUrl}

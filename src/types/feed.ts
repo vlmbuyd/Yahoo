@@ -14,4 +14,5 @@ export interface CategoryFeedType extends FeedType {
 
 export interface RecoFeedType extends FeedType {
   content: string;
+  author: string;
 }

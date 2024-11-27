@@ -1,9 +1,10 @@
-import { CategoryNewsList } from "@/components/common/CategoryNewsList";
+import { CategoryNewsList } from "@/components/category-news-feed/CategoryNewsList";
 import { Header } from "@/components/common/Header";
 import bannerAds_1 from "/banner-ads/banner-ads-1.webp";
 import bannerAds_2 from "/banner-ads/banner-ads-2.webp";
 import { SideBar } from "@/components/common/SideBar";
 import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
+import { RecoNewsFeedList } from "@/components/reco-news-feed/RecoNewsFeedList";
 
 export const MainPage = () => {
   return (
@@ -17,13 +18,14 @@ export const MainPage = () => {
 
         <section className="min-w-[730px] max-w-[764px]">
           <CategoryNewsList />
-          <div className="w-full h-auto">
+          <div className="w-full h-auto mb-[24px]">
             <img
               src={bannerAds_1}
               alt="banner-advertising"
               className="block w-full object-fill"
             />
           </div>
+          <RecoNewsFeedList />
         </section>
 
         <section className="flex-1 min-w-[290px] max-w-[384px]">

@@ -10,7 +10,7 @@ export const CategoryNewsList = () => {
   const data = feedData as CategoryFeedType[];
 
   return (
-    <section className="min-w-[730px] max-w-[764px] h-[320px] pt-[20px] mb-[24px] rounded-[10px] bg-[white] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
+    <section className="w-full h-[320px] pt-[20px] mb-[24px] rounded-[10px] bg-[white] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
       <header className="mb-[20px]">
         <ul className="flex">
           {menus.map((menu, idx) => (

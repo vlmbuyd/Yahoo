@@ -1,10 +1,17 @@
-export interface CategoryFeedType {
+interface FeedType {
   id: number;
-  category: string;
   page: number;
   title: string;
-  comment: number;
-  isNew: boolean;
   imgUrl: string;
   url: string;
+}
+
+export interface CategoryFeedType extends FeedType {
+  category: string;
+  comment: number;
+  isNew: boolean;
+}
+
+export interface RecoFeedType extends FeedType {
+  content: string;
 }

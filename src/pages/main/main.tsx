@@ -1,6 +1,7 @@
 import { CategoryNewsList } from "@/components/common/CategoryNewsList";
 import { Header } from "@/components/common/Header";
 import bannerAds_1 from "/banner-ads/banner-ads-1.webp";
+import bannerAds_2 from "/banner-ads/banner-ads-2.webp";
 import { SideBar } from "@/components/common/SideBar";
 import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
 
@@ -10,9 +11,9 @@ export const MainPage = () => {
       <Header />
 
       <div className="flex justify-center w-full gap-[40px] px-[20px]">
-        {/* <section>
+        <section>
           <SideBar />
-        </section> */}
+        </section>
 
         <section className="min-w-[730px] max-w-[764px]">
           <CategoryNewsList />
@@ -27,6 +28,13 @@ export const MainPage = () => {
 
         <section className="flex-1 min-w-[290px] max-w-[384px]">
           <RealTimeSearchTrends />
+          <div className="w-full max-h-[184px]">
+            <img
+              src={bannerAds_2}
+              alt="banner-advertising"
+              className="block w-full h-auto object-fill"
+            />
+          </div>
         </section>
       </div>
     </div>

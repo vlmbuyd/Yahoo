@@ -5,6 +5,7 @@ import bannerAds_2 from "/banner-ads/banner-ads-2.webp";
 import { SideBar } from "@/components/common/SideBar";
 import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
 import { RecoNewsFeedList } from "@/components/reco-news-feed/RecoNewsFeedList";
+import { AlertDashboard } from "@/components/common/AlertDashboard";
 
 export const MainPage = () => {
   return (
@@ -28,15 +29,16 @@ export const MainPage = () => {
           <RecoNewsFeedList />
         </section>
 
-        <section className="flex-1 min-w-[290px] max-w-[384px]">
+        <section className="flex flex-col flex-1 gap-[24px] min-w-[290px] max-w-[384px]">
           <RealTimeSearchTrends />
           <div className="w-full max-h-[184px]">
             <img
               src={bannerAds_2}
               alt="banner-advertising"
-              className="block w-full h-auto object-fill"
+              className="block w-full h-full"
             />
           </div>
+          <AlertDashboard />
         </section>
       </div>
     </div>

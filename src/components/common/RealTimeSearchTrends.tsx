@@ -5,7 +5,7 @@ import downRankArrow from "@/assets/icons/down-rank-arrow.svg";
 export const RealTimeSearchTrends = () => {
   const data: { content: string; trendingUp: boolean }[] = trendData;
   return (
-    <section className="min-w-[290px] max-w-[384px] min-h-[320px] max-h-[346px] pt-[20px] pl-[20px] pr-[14px] pb-[12px] mb-[24px] rounded-[12px] bg-[#ffffff] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
+    <section className="min-w-[290px] max-w-[384px] min-h-[320px] max-h-[346px] pt-[20px] pl-[20px] pr-[14px] pb-[12px] rounded-[12px] bg-[#ffffff] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
       <h3 className="text-[19px] mb-[24px] font-bold text-[#222222]">
         リアルタイム
       </h3>

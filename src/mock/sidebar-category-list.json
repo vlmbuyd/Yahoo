@@ -1,0 +1,173 @@
+[
+  [
+    {
+      "group": "お気に入り",
+      "name": "Yahoo!路線情報",
+      "imgUrl": "/sidebar-category-icon/icon-1.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-1.svg",
+      "url": "https://transit.yahoo.co.jp/"
+    },
+    {
+      "group": "お気に入り",
+      "name": "お気に入り",
+      "imgUrl": "/sidebar-category-icon/icon-2.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-1.svg",
+      "url": "https://www.kurashiru.com/?utm_source=yahoo_top_contentbox"
+    },
+    {
+      "group": "お気に入り",
+      "name": "PayPay カード",
+      "imgUrl": "/sidebar-category-icon/icon-3.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-1.svg",
+      "url": "https://www.paypay-card.co.jp/?utm_source=YTOP&utm_medium=txt_services&utm_campaign=PPCD_e"
+    }
+  ],
+  [
+    {
+      "group": "買い物",
+      "name": "ショッピング",
+      "imgUrl": "/sidebar-category-icon/icon-4.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-2.svg",
+      "url": "https://shopping.yahoo.co.jp/"
+    },
+    {
+      "group": "買い物",
+      "name": "ショッピング",
+      "imgUrl": "/sidebar-category-icon/icon-5.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-2.svg",
+      "url": "https://shopping.yahoo.co.jp/"
+    },
+    {
+      "group": "買い物",
+      "name": "フリマ",
+      "imgUrl": "/sidebar-category-icon/icon-6.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-2.svg",
+      "url": "https://app.adjust.com/m9ejg3e?redirect=https%3A%2F%2Fpaypayfleamarket.yahoo.co.jp%2F%3Fcpt_s%3Dytopmedia%26cpt_m%3Dkotei%26cpt_n%3Dalllist%26cpt_c%3Dytopmedia"
+    },
+    {
+      "group": "買い物",
+      "name": "ZOZOTOWN",
+      "imgUrl": "/sidebar-category-icon/icon-7.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-2.svg",
+      "url": "https://zozo.jp/?utm_source=yahoo&utm_medium=referral&utm_campaign=web_svc"
+    },
+    {
+      "group": "買い物",
+      "name": "出前館",
+      "imgUrl": "/sidebar-category-icon/icon-8.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-2.svg",
+      "url": "https://demae-can.com/?utm_source=yahoo&utm_medium=toplink&utm_campaign=demaecantop"
+    }
+  ],
+  [
+    {
+      "group": "金融",
+      "name": "ファイナンス",
+      "imgUrl": "/sidebar-category-icon/icon-9.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-3.svg",
+      "url": "https://finance.yahoo.co.jp/"
+    },
+    {
+      "group": "金融",
+      "name": "PayPayカード",
+      "imgUrl": "/sidebar-category-icon/icon-10.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-3.svg",
+      "url": "https://www.paypay-card.co.jp/?utm_source=YTOP&utm_medium=txt_services&utm_campaign=PPCD_e"
+    },
+    {
+      "group": "金融",
+      "name": "公金支払い",
+      "imgUrl": "/sidebar-category-icon/icon-11.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-3.svg",
+      "url": "https://koukin.yahoo.co.jp/"
+    },
+    {
+      "group": "金融",
+      "name": "LINE FX",
+      "imgUrl": "/sidebar-category-icon/icon-12.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-3.svg",
+      "url": "https://www.line-fx.com/?utm_source=yahooTop&utm_medium=referral&utm_campaign=yahooTop_PCsvc_2410"
+    },
+    {
+      "group": "金融",
+      "name": "ウォレット",
+      "imgUrl": "/sidebar-category-icon/icon-13.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-3.svg",
+      "url": "https://wallet.yahoo.co.jp/"
+    }
+  ],
+  [
+    {
+      "group": "エンタメ",
+      "name": "ゲーム",
+      "imgUrl": "/sidebar-category-icon/icon-14.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-4.svg",
+      "url": "https://games.yahoo.co.jp/"
+    },
+    {
+      "group": "エンタメ",
+      "name": "スポーツナビ",
+      "imgUrl": "/sidebar-category-icon/icon-15.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-4.svg",
+      "url": "https://sports.yahoo.co.jp/"
+    },
+    {
+      "group": "エンタメ",
+      "name": "LINE MUSIC",
+      "imgUrl": "/sidebar-category-icon/icon-16.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-4.svg",
+      "url": "https://music.line.me/webapp/today"
+    },
+    {
+      "group": "エンタメ",
+      "name": "自動車",
+      "imgUrl": "/sidebar-category-icon/icon-17.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-4.svg",
+      "url": "https://carview.yahoo.co.jp/"
+    },
+    {
+      "group": "エンタメ",
+      "name": "LINE 占い",
+      "imgUrl": "/sidebar-category-icon/icon-18.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-4.svg",
+      "url": "https://fortune.line.me/"
+    }
+  ],
+  [
+    {
+      "group": "旅行・交通",
+      "name": "トラベル",
+      "imgUrl": "/sidebar-category-icon/icon-19.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-5.svg",
+      "url": "https://travel.yahoo.co.jp/?ikCo=y_010002&sc_e=ytsl"
+    },
+    {
+      "group": "旅行・交通",
+      "name": "一休.com",
+      "imgUrl": "/sidebar-category-icon/icon-20.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-5.svg",
+      "url": "https://www.ikyu.com/ikCo.ashx?cosid=ik010002&surl=%2F&sc_e=ytc_pc_ikyu"
+    },
+    {
+      "group": "旅行・交通",
+      "name": "路線情報",
+      "imgUrl": "/sidebar-category-icon/icon-21.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-5.svg",
+      "url": "https://transit.yahoo.co.jp/"
+    },
+    {
+      "group": "旅行・交通",
+      "name": "マップ",
+      "imgUrl": "/sidebar-category-icon/icon-22.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-5.svg",
+      "url": "https://map.yahoo.co.jp/"
+    },
+    {
+      "group": "旅行・交通",
+      "name": "道路交通情報",
+      "imgUrl": "/sidebar-category-icon/icon-23.svg",
+      "groupImgUrl": "/sidebar-category-icon/group-icon-5.svg",
+      "url": "https://roadway.yahoo.co.jp/"
+    }
+  ]
+]

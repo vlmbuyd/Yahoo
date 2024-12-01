@@ -3,7 +3,7 @@ import weatherCloud from "@/assets/weather/weather_cloud.svg";
 import searchIcon from "@/assets/icons/search.svg";
 import optionIcon from "@/assets/icons/option.svg";
 
-export const Header = () => {
+export const SearchBar = () => {
   return (
     <header className="flex flex-col items-center mb-[64px] mx-auto">
       <div className="flex justify-center mb-[30px]">

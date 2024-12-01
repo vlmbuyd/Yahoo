@@ -10,10 +10,31 @@ import bannerAds_3 from "/banner-ads/banner-ads-3.webp";
 import leftArrowIcon from "@/assets/common/left_arrow.svg";
 import rightArrowIcon from "@/assets/common/right_arrow.svg";
 import bannerPageNum from "@/assets/icons/banner-ads-page-num.svg";
+import settingIcon from "@/assets/common/setting.svg";
+import mailIcon from "@/assets/common/mail.svg";
 
 export const MainPage = () => {
   return (
-    <div className="flex flex-col items-center w-full min-h-screen pt-[56px]">
+    <div className="relative flex flex-col items-center w-full min-h-screen pt-[56px]">
+      <div className="flex justify-between absolute top-[20px] left-[20px] w-[1280px] h-[38px]">
+        <button className="flex justify-center items-center w-[127px] h-[38px] border border-solid border-[#4D45D6] rounded-[78px]">
+          <img src={settingIcon} alt="setting-icon" className="mr-[5px]" />
+          <span className="text-[13px] font-medium text-[#4D45D6]">
+            홈페이지 설정
+          </span>
+        </button>
+
+        <div className="flex">
+          <button className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#4D45D6] rounded-[78px] mr-[12px]">
+            <img src={mailIcon} alt="mail-icon" className="mr-[3px]" />
+            <span className="text-[15px] font-medium text-[#4D45D6]">메일</span>
+          </button>
+          <button className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#4D45D6] rounded-[78px] mr-[12px] text-[15px] font-medium text-[#4D45D6]">
+            로그인
+          </button>
+        </div>
+      </div>
+
       <Header />
 
       <div className="flex justify-center w-full gap-[40px] px-[20px]">

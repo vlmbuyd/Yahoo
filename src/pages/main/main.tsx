@@ -4,6 +4,8 @@ import { SideBar } from "@/components/common/SideBar";
 import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
 import { RecoNewsFeedList } from "@/components/reco-news-feed/RecoNewsFeedList";
 import { AlertDashboard } from "@/components/common/AlertDashboard";
+import { useVersionStore } from "@/store/version";
+import { useShallow } from "zustand/shallow";
 import bannerAds_1 from "/banner-ads/banner-ads-1.webp";
 import bannerAds_2 from "/banner-ads/banner-ads-2.webp";
 import bannerAds_3 from "/banner-ads/banner-ads-3.webp";
@@ -12,25 +14,35 @@ import rightArrowIcon from "@/assets/common/right_arrow.svg";
 import bannerPageNum from "@/assets/icons/banner-ads-page-num.svg";
 import settingIcon from "@/assets/common/setting.svg";
 import mailIcon from "@/assets/common/mail.svg";
+import dropdownMenu from "@/assets/common/dropdown-menu.svg";
+import dropdownMenu from "@/assets/common/dropdown-menu.svg";
 
 export const MainPage = () => {
+  const { version } = useVersionStore(
+    useShallow((state) => ({
+      version: state.version,
+    }))
+  );
+
   return (
     <div className="relative flex flex-col items-center w-full min-h-screen pt-[56px]">
       <div className="flex justify-between absolute top-[20px] left-[20px] w-[1280px] h-[38px]">
         <button className="flex justify-center items-center w-[127px] h-[38px] border border-solid border-[#4D45D6] rounded-[78px]">
           <img src={settingIcon} alt="setting-icon" className="mr-[5px]" />
           <span className="text-[13px] font-medium text-[#4D45D6]">
-            홈페이지 설정
+            ホーム設定
           </span>
         </button>
 
         <div className="flex">
           <button className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#4D45D6] rounded-[78px] mr-[12px]">
             <img src={mailIcon} alt="mail-icon" className="mr-[3px]" />
-            <span className="text-[15px] font-medium text-[#4D45D6]">메일</span>
+            <span className="text-[15px] font-medium text-[#4D45D6]">
+              メール
+            </span>
           </button>
           <button className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#4D45D6] rounded-[78px] mr-[12px] text-[15px] font-medium text-[#4D45D6]">
-            로그인
+            ログイン
           </button>
         </div>
       </div>
@@ -38,10 +50,11 @@ export const MainPage = () => {
       <Header />
 
       <div className="flex justify-center w-full gap-[40px] px-[20px]">
-        <section>
-          <SideBar />
-        </section>
-
+        {(version === "pagination" || version === "load-more") && (
+          <section>
+            <SideBar />
+          </section>
+        )}
         <section className="min-w-[730px] max-w-[764px]">
           <CategoryNewsList />
           <div className="w-full h-auto mb-[24px]">
@@ -56,12 +69,22 @@ export const MainPage = () => {
 
         <section className="flex flex-col flex-1 gap-[24px] min-w-[290px] max-w-[384px]">
           <RealTimeSearchTrends />
-          <div className="w-full max-h-[184px]">
-            <img src={bannerAds_2} alt="banner-advertising" />
+          <div className="w-full">
+            <img
+              src={bannerAds_2}
+              alt="banner-advertising"
+              className="w-full object-fill"
+            />
           </div>
           <AlertDashboard />
-          <div className="relative w-full h-[348px]">
-            <img src={bannerAds_3} alt="banner-advertising" className="w-[" />
+
+          {/* 배너 광고 */}
+          <div className="relative w-full ">
+            <img
+              src={bannerAds_3}
+              alt="banner-advertising"
+              className="w-full object-fill"
+            />
 
             <button
               className="flex justify-center items-center absolute top-[50%] -translate-y-1/2 left-0 w-[36px] h-[52px]"

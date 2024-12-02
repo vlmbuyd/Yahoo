@@ -1,6 +1,6 @@
 import { CategoryNewsList } from "@/components/category-news-feed/CategoryNewsList";
 import { SearchBar } from "@/components/header/SearchBar";
-import { SideBar } from "@/components/common/SideBar";
+import { SideBar } from "@/components/navigation/SideBar";
 import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
 import { RecoNewsFeedList } from "@/components/reco-news-feed/RecoNewsFeedList";
 import { AlertDashboard } from "@/components/common/AlertDashboard";

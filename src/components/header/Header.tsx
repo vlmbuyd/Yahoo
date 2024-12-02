@@ -4,12 +4,7 @@ import mailUnactive from "@/assets/common/mail-unactive.svg";
 import dropdownMenu from "@/assets/common/dropdown-menu.svg";
 import { useVersionStore } from "@/store/version";
 import { useShallow } from "zustand/shallow";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { SideBar } from "../common/SideBar";
+import { Dropdown } from "../navigation/Dropdown";
 
 export const Header = () => {
   const { version } = useVersionStore(
@@ -34,21 +29,7 @@ export const Header = () => {
           </button>
         ) : version === "dropdown" ? (
           <div className="flex">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button>
-                  <img
-                    src={dropdownMenu}
-                    alt="setting-icon"
-                    className="mr-[10px]"
-                  />
-                </button>
-              </DropdownMenuTrigger>
-
-              <DropdownMenuContent className="w-[bg-[salmon]">
-                <SideBar />
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Dropdown />
             <button>
               <img src={settingLarge} alt="setting-icon" />
             </button>

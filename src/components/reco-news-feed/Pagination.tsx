@@ -1,15 +1,13 @@
 import feedData from "@/mock/reco-news-feed.json";
 import { RecoFeedType } from "@/types/feed";
 import { RecoNewsFeed } from "./RecoNewsFeed";
-import btnPrev10 from "@/assets/icons/btn-prev-10.svg";
 import btnPrev1 from "@/assets/icons/btn-prev-1.svg";
-import btnNext10 from "@/assets/icons/btn-next-10.svg";
 import btnNext1 from "@/assets/icons/btn-next-1.svg";
 import { useState } from "react";
 
 export const Pagination = () => {
   const data = feedData as RecoFeedType[];
-  let pageList = [...new Array(10)].map((_, i) => i + 1);
+  const pageList = [...new Array(10)].map((_, i) => i + 1);
   const [pageNumList, setPageNumList] = useState<number[]>(pageList);
   const [currPage, setCurrPage] = useState<number>(1);
 
@@ -19,7 +17,7 @@ export const Pagination = () => {
         <ul className="flex flex-col gap-[10px]">
           {data.map(
             (feed, idx) =>
-              feed.page === pageNumList[0] && (
+              feed.page.includes(currPage % 10) && (
                 <RecoNewsFeed key={`reco-news-feed-${idx}`} {...feed} />
               )
           )}
@@ -27,10 +25,13 @@ export const Pagination = () => {
 
         {/* pagination */}
         <ul className="flex justify-center items-center gap-[4px] w-[500px] h-[32px] mt-[27px] mx-auto">
-          <button>
-            <img src={btnPrev10} alt="btn-prev-10" className="cursor-pointer" />
-          </button>
-          <button>
+          <button
+            onClick={() => {
+              setPageNumList((prev) => prev.map((num) => num - 10));
+              setCurrPage((prev) => Math.floor((prev - 10) / 10) * 10 + 1); // 11, 21, 31..페이지로 이동
+            }}
+            disabled={currPage === 1}
+          >
             <img src={btnPrev1} alt="btn-prev-1" className="cursor-pointer" />
           </button>
           {pageNumList.map((pageNum, idx) => (
@@ -48,16 +49,13 @@ export const Pagination = () => {
               {pageNum}
             </li>
           ))}
-          <button onClick={() => setCurrPage((prev) => prev + 1)}>
-            <img src={btnNext1} alt="btn-next-1" className="cursor-pointer" />
-          </button>
           <button
             onClick={() => {
               setPageNumList((prev) => prev.map((num) => num + 10));
-              setCurrPage(pageNumList[0]);
+              setCurrPage((prev) => Math.floor((prev + 10) / 10) * 10 + 1); // 11, 21, 31..페이지로 이동
             }}
           >
-            <img src={btnNext10} alt="btn-next-10" className="cursor-pointer" />
+            <img src={btnNext1} alt="btn-next-1" className="cursor-pointer" />
           </button>
         </ul>
       </section>

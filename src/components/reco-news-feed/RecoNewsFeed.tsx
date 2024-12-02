@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 export const RecoNewsFeed = (feed: RecoFeedType) => {
   return (
     <Link to={feed.url}>
-      <article className="flex items-center min-w-[692px] min-h-[140px] max-w-[708px] max-h-[128px] pl-[6px] rounded-[12px] bg-[white]">
+      <article
+        className="flex items-center min-w-[692px] min-h-[140px] max-w-[708px] max-h-[128px] pl-[6px] rounded-[12px] bg-[white]
+      hover:shadow-[2px_3px_10px_rgba(0,0,0,0.16)] group"
+      >
         <div className="mr-[20px] ">
           <img
             src={feed.imgUrl}
@@ -14,7 +17,10 @@ export const RecoNewsFeed = (feed: RecoFeedType) => {
         </div>
 
         <div className="flex flex-col justify-center w-[452px]">
-          <h4 className="w-full mb-[9px] text-[18px] font-bold text-[#222222] line-clamp-1 overflow-hidden text-ellipsis">
+          <h4
+            className="w-full mb-[9px] text-[18px] font-bold text-[#222222] line-clamp-1 overflow-hidden text-ellipsis
+          group-hover:text-[#7A42E8]"
+          >
             {feed.title}
           </h4>
 

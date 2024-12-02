@@ -12,8 +12,14 @@ export interface CategoryFeedType extends FeedType {
   isNew: boolean;
 }
 
-export interface RecoFeedType extends FeedType {
+export interface RecoFeedPaginationType extends FeedType {
   page: number[];
+  content: string;
+  author: string;
+}
+
+export interface RecoFeedLoadMoreType extends FeedType {
+  page: number;
   content: string;
   author: string;
 }

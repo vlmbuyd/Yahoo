@@ -1,12 +1,12 @@
-import feedData from "@/mock/reco-news-feed.json";
-import { RecoFeedType } from "@/types/feed";
+import feedData from "@/mock/reco-news-feed-pagination.json";
+import { RecoFeedPaginationType } from "@/types/feed";
 import { RecoNewsFeed } from "./RecoNewsFeed";
 import btnPrev1 from "@/assets/icons/btn-prev-1.svg";
 import btnNext1 from "@/assets/icons/btn-next-1.svg";
 import { useState } from "react";
 
 export const Pagination = () => {
-  const data = feedData as RecoFeedType[];
+  const data = feedData as RecoFeedPaginationType[];
   const pageList = [...new Array(10)].map((_, i) => i + 1);
   const [pageNumList, setPageNumList] = useState<number[]>(pageList);
   const [currPage, setCurrPage] = useState<number>(1);

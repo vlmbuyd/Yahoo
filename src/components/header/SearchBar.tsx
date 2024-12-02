@@ -38,12 +38,12 @@ export const SearchBar = () => {
             className="absolute top-[50%] -translate-y-1/2 right-[24px]"
           />
           <button className="absolute top-[50%] -translate-y-1/2 right-0 w-[76px] h-[50px] rounded-[69px] text-[16px] font-medium text-[white] bg-[#4D45D6] ">
-            검색
+            検索
           </button>
         </div>
       </div>
 
-      <ul className="flex justify-between w-[602px]">
+      <ul className="flex justify-end gap-[45px] pr-[15px] w-full">
         <Link to="https://search.yahoo.co.jp/search?p=%E3%80%8C%E6%98%8E%E6%B2%BB%E3%80%8D%E3%81%AE%E5%89%8D%E3%81%AE%E5%85%83%E5%8F%B7%E3%82%92%E7%9F%A5&ei=UTF-8">
           <li className="text-[14px] font-normal text-[#555555]">
             &gt;「明治」の前の元号を知···

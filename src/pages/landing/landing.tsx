@@ -11,12 +11,12 @@ export const LandingPage = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full h-screen ">
       <section className="flex mb-[150px]">
-        <Link to="https://www.yahoo.co.jp/">
+        <Link to="https://www.yahoo.co.jp/" target="_blank">
           <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
             기존 야후
           </button>
         </Link>
-        <Link to="/develop">
+        <Link to="/develop" target="_blank">
           <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
             최종 개선안
           </button>

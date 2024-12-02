@@ -9,7 +9,7 @@
     },
     {
       "group": "お気に入り",
-      "name": "お気に入り",
+      "name": "クラシル",
       "imgUrl": "/sidebar-category-icon/icon-2.svg",
       "groupImgUrl": "/sidebar-category-icon/group-icon-1.svg",
       "url": "https://www.kurashiru.com/?utm_source=yahoo_top_contentbox"
@@ -32,7 +32,7 @@
     },
     {
       "group": "買い物",
-      "name": "ショッピング",
+      "name": "ヤフオク",
       "imgUrl": "/sidebar-category-icon/icon-5.svg",
       "groupImgUrl": "/sidebar-category-icon/group-icon-2.svg",
       "url": "https://shopping.yahoo.co.jp/"

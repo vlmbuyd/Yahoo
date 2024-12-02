@@ -15,7 +15,7 @@ export const Pagination = () => {
 
   return (
     <>
-      <section className="w-full h-[984px] px-[19px] py-[24px] mb-[24px] bg-[white] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
+      <section className="w-full h-[984px] rounded-[10px] px-[19px] py-[24px] mb-[24px] bg-[white] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
         <ul className="flex flex-col gap-[10px]">
           {data.map(
             (feed, idx) =>

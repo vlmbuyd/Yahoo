@@ -7,7 +7,7 @@ export const SideBar = () => {
   console.log(categoryGroups);
 
   return (
-    <div className="flex flex-col items-center w-[180px] pt-[20px] rounded-[10px] bg-[#F1F3F5] shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
+    <div className="flex flex-col items-center w-[180px] pt-[20px] rounded-[10px] bg-[#F1F3F5]  shadow-[1px_2px_10px_rgba(0,0,0,0.05)]">
       <ul className="w-[152px]">
         {categoryGroups.map((group, idx) => (
           <ul

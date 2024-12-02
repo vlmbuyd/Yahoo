@@ -2,6 +2,7 @@ import logo from "@/assets/common/yahoo-japan-logo.svg";
 import weatherCloud from "@/assets/weather/weather_cloud.svg";
 import searchIcon from "@/assets/icons/search.svg";
 import optionIcon from "@/assets/icons/option.svg";
+import { Link } from "react-router-dom";
 
 export const SearchBar = () => {
   return (
@@ -40,15 +41,21 @@ export const SearchBar = () => {
       </div>
 
       <ul className="flex justify-between w-[602px]">
-        <li className="text-[14px] font-normal text-[#555555]">
-          &gt;をがな第三者家記事回避···
-        </li>
-        <li className="text-[14px] font-normal text-[#555555]">
-          &gt;をがな第三者家記事回避···
-        </li>
-        <li className="text-[14px] font-normal text-[#555555]">
-          &gt;をがな第三者家記事回避···
-        </li>
+        <Link to="https://search.yahoo.co.jp/search?p=%E3%80%8C%E6%98%8E%E6%B2%BB%E3%80%8D%E3%81%AE%E5%89%8D%E3%81%AE%E5%85%83%E5%8F%B7%E3%82%92%E7%9F%A5&ei=UTF-8">
+          <li className="text-[14px] font-normal text-[#555555]">
+            &gt;「明治」の前の元号を知···
+          </li>
+        </Link>
+        <Link to="https://search.yahoo.co.jp/search?p=%E5%A4%A7%E5%9C%B0%E9%9C%87%E3%81%8C%E3%81%8D%E3%81%9F%E3%82%89%E3%81%A9%E3%81%86%E3%81%99%E3%82%8B&x=wrt&aq=-1&ai=2b728e66-1447-423b-b476-746c9937d649&ts=854&ei=UTF-8">
+          <li className="text-[14px] font-normal text-[#555555]">
+            &gt;大地震がきたらどうする···
+          </li>
+        </Link>
+        <Link to="https://search.yahoo.co.jp/search?p=%E3%81%8A%E3%81%9B%E3%81%A1%EF%BC%86%E5%B9%B4%E8%B6%8A%E3%81%97%E3%82%B0%E3%83%AB%E3%83%A1%E7%89%B9%E9%9B%86&x=wrt&aq=-1&ai=794cc04f-ba06-4708-b609-74c18e72c402&ts=1809&ei=UTF-8">
+          <li className="text-[14px] font-normal text-[#555555]">
+            &gt;おせち＆年越しグルメ特集
+          </li>
+        </Link>
       </ul>
     </header>
   );

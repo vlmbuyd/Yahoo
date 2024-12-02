@@ -29,7 +29,7 @@ export const SideBar = () => {
               <Link to={item.url} className="pl-[12px] w-full">
                 <li
                   key={`category-item-${idx}`}
-                  className="flex items-center h-[24px] mb-[10px]"
+                  className="flex items-center h-[24px] mb-[10px] hover:underline"
                 >
                   <img
                     src={item.imgUrl}

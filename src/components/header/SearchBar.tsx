@@ -15,16 +15,19 @@ export const SearchBar = () => {
       </div>
 
       <div className="flex mb-[14px]">
-        <div
-          className="flex justify-center items-center w-[102px] h-[50px] rounded-[86px] border border-solid border-[#CFCFD9] mr-[10px] bg-[white] shadow-[1px_2px_10px_rgba(0,0,0,0.08)] cursor-pointer
-        hover:border-[#BFBFC5] hover:shadow-[2px_4px_12px_rgba(0,0,0,0.12)]
-        "
-        >
-          <img src={weatherCloud} alt="weather-icon" />
-          <strong className="text-[13px] font-medium text-[#666666]">
-            16C<span className="text-[#cfcfd9]"> | </span>10C
-          </strong>
-        </div>
+        <Link to="https://weather.yahoo.co.jp/weather/jp/13/4410/13103.html">
+          <div
+            className="flex justify-center items-center w-[102px] h-[50px] rounded-[86px] border border-solid border-[#CFCFD9] mr-[10px] bg-[white] shadow-[1px_2px_10px_rgba(0,0,0,0.08)]
+            hover:border-[#BFBFC5] hover:shadow-[2px_4px_12px_rgba(0,0,0,0.12)]
+            "
+            onClick={() => console.log("클릭")}
+          >
+            <img src={weatherCloud} alt="weather-icon" />
+            <strong className="text-[13px] font-medium text-[#666666]">
+              16C<span className="text-[#cfcfd9]"> | </span>10C
+            </strong>
+          </div>
+        </Link>
 
         <div className="relative">
           <img

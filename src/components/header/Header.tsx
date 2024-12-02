@@ -8,6 +8,7 @@ import { useVersionStore } from "@/store/version";
 import { useShallow } from "zustand/shallow";
 import { Dropdown } from "../navigation/Dropdown";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const { version } = useVersionStore(
@@ -60,28 +61,32 @@ export const Header = () => {
         )}
 
         <div className="flex">
-          <button
-            className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#CFCFD9] rounded-[78px] mr-[12px]
+          <Link to="https://login.yahoo.co.jp/config/login?.src=www&.done=https%3A%2F%2Fwww.yahoo.co.jp%2F">
+            <button
+              className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#CFCFD9] rounded-[78px] mr-[12px]
                      hover:border-[#7A42E8]"
-            onMouseEnter={() => setIsMailHovered(true)}
-            onMouseLeave={() => setIsMailHovered(false)}
-          >
-            <img
-              src={isMailHovered ? mailActive : mailUnactive}
-              alt="mail-icon"
-              className={`flex justify-center items-center`}
-            />
-            <span className="text-[15px] font-medium text-[#444444] hover:text-[#7A42E8]">
-              メール
-            </span>
-          </button>
-          <button
-            className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#CFCFD9] rounded-[78px] mr-[12px] text-[15px] font-medium text-[#444444]
+              onMouseEnter={() => setIsMailHovered(true)}
+              onMouseLeave={() => setIsMailHovered(false)}
+            >
+              <img
+                src={isMailHovered ? mailActive : mailUnactive}
+                alt="mail-icon"
+                className={`flex justify-center items-center`}
+              />
+              <span className="text-[15px] font-medium text-[#444444] hover:text-[#7A42E8]">
+                メール
+              </span>
+            </button>
+          </Link>
+          <Link to="https://login.yahoo.co.jp/config/login?.src=www&.done=https%3A%2F%2Fwww.yahoo.co.jp%2F">
+            <button
+              className="flex justify-center items-center w-[90px] h-[38px] border border-solid border-[#CFCFD9] rounded-[78px] mr-[12px] text-[15px] font-medium text-[#444444]
           hover:text-[#7A42E8] hover:border-[#7A42E8]
           "
-          >
-            ログイン
-          </button>
+            >
+              ログイン
+            </button>
+          </Link>
         </div>
       </div>
     </>

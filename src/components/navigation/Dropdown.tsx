@@ -12,7 +12,7 @@ import profileImg from "@/assets/common/profile-img.svg";
 
 export const Dropdown = () => {
   const categoryGroups: sideBarType[] = categoryData;
-  console.log(categoryGroups);
+
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>

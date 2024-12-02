@@ -1,7 +1,9 @@
-import { RecoFeedType } from "@/types/feed";
+import { RecoFeedLoadMoreType, RecoFeedPaginationType } from "@/types/feed";
 import { Link } from "react-router-dom";
 
-export const RecoNewsFeed = (feed: RecoFeedType) => {
+export const RecoNewsFeed = (
+  feed: RecoFeedPaginationType | RecoFeedLoadMoreType
+) => {
   return (
     <Link to={feed.url}>
       <article

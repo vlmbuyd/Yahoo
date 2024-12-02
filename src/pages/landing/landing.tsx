@@ -13,12 +13,12 @@ export const LandingPage = () => {
       <section className="flex mb-[150px]">
         <Link to="https://www.yahoo.co.jp/" target="_blank">
           <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
-            기존 야후
+            Before
           </button>
         </Link>
         <Link to="/develop" target="_blank">
           <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
-            최종 개선안
+            After
           </button>
         </Link>
       </section>
@@ -27,12 +27,12 @@ export const LandingPage = () => {
         <div className="flex flex-col">
           <Link to="/main" onClick={() => setVersion("pagination")}>
             <button className="w-[300px] h-[150px] mr-[50px] mb-[30px] bg-slate-500">
-              페이지네이션 (기본)
+              Pagination (Basic)
             </button>
           </Link>
           <Link to="/main" onClick={() => setVersion("load-more")}>
             <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
-              더보기
+              Load More
             </button>
           </Link>
         </div>
@@ -40,12 +40,12 @@ export const LandingPage = () => {
         <div className="flex flex-col">
           <Link to="/main" onClick={() => setVersion("dropdown")}>
             <button className="w-[300px] h-[150px] mr-[50px] mb-[30px] bg-slate-500">
-              드롭다운
+              Dropdown
             </button>
           </Link>
           <Link to="/main" onClick={() => setVersion("hamburger")}>
             <button className="w-[300px] h-[150px] mr-[50px] bg-slate-500">
-              햄버거
+              Hamburger
             </button>
           </Link>
         </div>

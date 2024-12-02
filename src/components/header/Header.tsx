@@ -22,24 +22,23 @@ export const Header = () => {
   return (
     <>
       <div className="flex justify-between absolute top-[20px] left-[20px] w-[1280px] h-[38px]">
-        {version === "pagination" ||
-          (version === "load-more" && (
-            <button
-              className="flex justify-center items-center w-[127px] h-[38px] border border-solid border-[#CFCFD9] rounded-[78px]
+        {(version === "pagination" || version === "load-more") && (
+          <button
+            className="flex justify-center items-center w-[127px] h-[38px] border border-solid border-[#CFCFD9] rounded-[78px]
             hover:border-[#7A42E8]"
-              onMouseEnter={() => setIsSettingHovered(true)}
-              onMouseLeave={() => setIsSettingHovered(false)}
-            >
-              <img
-                src={isSettingHovered ? settingActive : settingUnactive}
-                alt="setting-icon"
-                className="mr-[5px]"
-              />
-              <span className="text-[13px] font-medium text-[#444444] hover:text-[#7A42E8]">
-                ホーム設定
-              </span>
-            </button>
-          ))}
+            onMouseEnter={() => setIsSettingHovered(true)}
+            onMouseLeave={() => setIsSettingHovered(false)}
+          >
+            <img
+              src={isSettingHovered ? settingActive : settingUnactive}
+              alt="setting-icon"
+              className="mr-[5px]"
+            />
+            <span className="text-[13px] font-medium text-[#444444] hover:text-[#7A42E8]">
+              ホーム設定
+            </span>
+          </button>
+        )}
         {version === "dropdown" && (
           <div className="flex">
             <Dropdown />

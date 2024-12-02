@@ -2,12 +2,13 @@ import { CategoryNewsList } from "@/components/category-news-feed/CategoryNewsLi
 import { SearchBar } from "@/components/header/SearchBar";
 import { SideBar } from "@/components/navigation/SideBar";
 import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
-import { RecoNewsFeedList } from "@/components/reco-news-feed/RecoNewsFeedList";
+import { Pagination } from "@/components/reco-news-feed/Pagination";
 import { AlertDashboard } from "@/components/common/AlertDashboard";
 import { useVersionStore } from "@/store/version";
 import { useShallow } from "zustand/shallow";
 import { BannerAds } from "@/components/banner-ads/BannerAds";
 import { Header } from "@/components/header/Header";
+import { LoadMore } from "@/components/reco-news-feed/LoadMore";
 
 export const MainPage = () => {
   const { version } = useVersionStore(
@@ -31,7 +32,7 @@ export const MainPage = () => {
         <section className="flex flex-col flex-1 gap-[24px] min-w-[730px] max-w-[764px]">
           <CategoryNewsList />
           <BannerAds banner_num={1} />
-          <RecoNewsFeedList />
+          {version === "load-more" ? <LoadMore /> : <Pagination />}
         </section>
 
         <section className="flex flex-col flex-1 gap-[24px] min-w-[290px] max-w-[384px]">

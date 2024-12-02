@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 export const SearchBar = () => {
   return (
     <header className="flex flex-col items-center mb-[64px] mx-auto">
-      <div className="flex justify-center mb-[30px]">
+      <div
+        className="flex justify-center mb-[30px] cursor-pointer"
+        onClick={() => window.location.reload()}
+      >
         <img src={logo} alt="yahoo-jp-logo" />
       </div>
 

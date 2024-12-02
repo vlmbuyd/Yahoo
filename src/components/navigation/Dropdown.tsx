@@ -7,6 +7,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import dropdownMenu from "@/assets/common/dropdown-menu.svg";
+import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
+import profileImg from "@/assets/common/profile-img.svg";
 
 export const Dropdown = () => {
   const categoryGroups: sideBarType[] = categoryData;
@@ -20,6 +22,13 @@ export const Dropdown = () => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="absolute top-0 left-[-20px] flex flex-col items-center w-[270px] pt-[20px] rounded-[10px]  bg-[#F1F3F5] shadow-[1px_2px_10px_rgba(0,0,0,0.05)] ">
+        <DropdownMenuItem className="flex w-[185px] h-[44px] mb-[19px]">
+          <img src={profileImg} alt="profile-img" className="mr-[9px]" />
+          <strong className="flex items-center text-[12px] font-light text-[#555555]">
+            <span className="font-medium text-[#000000]">ログイン</span>
+            してください
+          </strong>
+        </DropdownMenuItem>
         <ul className="w-[186px]">
           {categoryGroups.map((group, idx) => (
             <ul

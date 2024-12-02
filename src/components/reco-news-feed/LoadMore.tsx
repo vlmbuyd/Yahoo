@@ -2,7 +2,7 @@ import feedData from "@/mock/reco-news-feed.json";
 import { RecoFeedType } from "@/types/feed";
 import { RecoNewsFeed } from "./RecoNewsFeed";
 
-export const RecoNewsFeedList = () => {
+export const LoadMore = () => {
   const data = feedData as RecoFeedType[];
 
   return (

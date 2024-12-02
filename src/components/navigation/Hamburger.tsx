@@ -46,6 +46,7 @@ export const Hamburger = () => {
             <img src={mailIcon} alt="mail-icon" />
           </button>
 
+          {/* 즐겨찾기 */}
           <div className="relative w-[326px] h-[107px] mb-[20px]">
             <img
               src={pinIcon}
@@ -54,19 +55,21 @@ export const Hamburger = () => {
             />
             <ul className="flex justify-around">
               {categoryData[0].map((item, idx) => (
-                <li
-                  key={`hamburger-pin-${idx}`}
-                  className="flex flex-col justify-center items-center w-[90px] h-[101px]"
-                >
-                  <img
-                    src={item.imgUrl}
-                    alt="pin-image"
-                    className="w-[60px] h-[60px]"
-                  />
-                  <strong className="text-[10px] font-normal text-[#000000]">
-                    {item.name}
-                  </strong>
-                </li>
+                <Link to={item.url} className="hover:underline">
+                  <li
+                    key={`hamburger-pin-${idx}`}
+                    className="flex flex-col justify-center items-center w-[90px] h-[101px]"
+                  >
+                    <img
+                      src={item.imgUrl}
+                      alt="pin-image"
+                      className="w-[60px] h-[60px]"
+                    />
+                    <strong className="text-[10px] font-normal text-[#000000]">
+                      {item.name}
+                    </strong>
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>
@@ -89,7 +92,7 @@ export const Hamburger = () => {
 
                 <ul className="flex flex-wrap justify-center items-center gap-x-[18px] gap-y-[10px]">
                   {group.map((item, idx) => (
-                    <Link to={item.url} className="">
+                    <Link to={item.url}>
                       <li
                         key={`category-item-${idx}`}
                         className="flex flex-col justify-center items-center w-[90px] h-[101px] mb-[10px] hover:underline"

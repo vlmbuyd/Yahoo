@@ -24,7 +24,9 @@ export const RealTimeSearchTrends = () => {
                 alt="trend-rank-icon"
                 className="mr-[4px]"
               />
-              <h4>{item.content}</h4>
+              <h4 className="text-[14px] font-medium text-[#333333]">
+                {item.content}
+              </h4>
             </li>
           </Link>
         ))}

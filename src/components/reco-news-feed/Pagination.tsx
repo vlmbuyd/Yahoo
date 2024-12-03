@@ -30,7 +30,7 @@ export const Pagination = () => {
               setPageNumList((prev) => prev.map((num) => num - 10));
               setCurrPage((prev) => Math.floor((prev - 10) / 10) * 10 + 1); // 11, 21, 31..페이지로 이동
             }}
-            disabled={currPage === 1}
+            disabled={Math.floor(currPage / 10) === 0 || currPage === 10}
           >
             <img src={btnPrev1} alt="btn-prev-1" className="cursor-pointer" />
           </button>

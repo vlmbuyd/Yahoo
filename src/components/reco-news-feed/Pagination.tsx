@@ -1,12 +1,12 @@
 import feedData from "@/mock/reco-news-feed-pagination.json";
-import { RecoFeedPaginationType } from "@/types/feed";
+import { RecoFeedType } from "@/types/feed";
 import { RecoNewsFeed } from "./RecoNewsFeed";
 import btnPrev1 from "@/assets/icons/btn-prev-1.svg";
 import btnNext1 from "@/assets/icons/btn-next-1.svg";
 import { useState } from "react";
 
 export const Pagination = () => {
-  const data = feedData as RecoFeedPaginationType[];
+  const data = feedData as RecoFeedType[];
   const pageList = [...new Array(10)].map((_, i) => i + 1);
   const [pageNumList, setPageNumList] = useState<number[]>(pageList);
   const [currPage, setCurrPage] = useState<number>(1);
@@ -52,7 +52,9 @@ export const Pagination = () => {
           <button
             onClick={() => {
               setPageNumList((prev) => prev.map((num) => num + 10));
-              setCurrPage((prev) => Math.floor((prev + 10) / 10) * 10 + 1); // 11, 21, 31..페이지로 이동
+              currPage % 10 === 0
+                ? setCurrPage((prev) => prev + 1)
+                : setCurrPage((prev) => Math.floor((prev + 10) / 10) * 10 + 1); // 11, 21, 31..페이지로 이동
             }}
           >
             <img src={btnNext1} alt="btn-next-1" className="cursor-pointer" />

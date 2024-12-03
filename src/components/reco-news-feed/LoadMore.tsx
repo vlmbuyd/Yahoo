@@ -1,13 +1,15 @@
-import feedData from "@/mock/reco-news-feed-load-more.json";
-import { RecoFeedLoadMoreType } from "@/types/feed";
+// import feedData from "@/mock/reco-news-feed-load-more.json";
+import feedData from "@/mock/reco-news-feed-pagination.json";
+import { RecoFeedType } from "@/types/feed";
 import { RecoNewsFeed } from "./RecoNewsFeed";
 import { useState } from "react";
 
 export const LoadMore = () => {
   const [currPage, setCurrPage] = useState<number>(1);
-  const data = feedData as RecoFeedLoadMoreType[];
+  // const data = feedData as RecoFeedLoadMoreType[];
+  const data = feedData as RecoFeedType[];
   const filteredData = data.filter((v) =>
-    [...new Array(currPage)].map((_, i) => i + 1).includes(v.page)
+    [...new Array(currPage)].map((_, i) => i + 1).includes(v.page[0])
   );
 
   return (
@@ -19,15 +21,17 @@ export const LoadMore = () => {
       </ul>
 
       {/* load more */}
-      <button
-        className="flex justify-center items-center gap-[4px] w-[682px] h-[42px] mt-[25px] border border-solid border-[#D5D5DA] rounded-[14px] mx-auto
+      {currPage !== 5 ? (
+        <button
+          className="flex justify-center items-center gap-[4px] w-[682px] h-[42px] mt-[25px] border border-solid border-[#D5D5DA] rounded-[14px] mx-auto
       "
-        onClick={() => {
-          setCurrPage((prev) => prev + 1);
-        }}
-      >
-        もっと見る
-      </button>
+          onClick={() => {
+            setCurrPage((prev) => prev + 1);
+          }}
+        >
+          もっと見る
+        </button>
+      ) : null}
     </section>
   );
 };

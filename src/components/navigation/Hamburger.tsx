@@ -11,6 +11,7 @@ import pinIcon from "@/assets/hamburger-icons/pin.svg";
 import categoryData from "@/mock/sidebar-category-list.json";
 import { sideBarType } from "@/types/sidebar-category";
 import { Link } from "react-router-dom";
+import styles from "./SheetContent.module.css";
 
 export const Hamburger = () => {
   const categoryGroups: sideBarType[] = categoryData.filter(
@@ -27,7 +28,7 @@ export const Hamburger = () => {
 
       <SheetContent
         side={"left"}
-        className="min-w-[435px] h-screen bg-[white] overflow-auto"
+        className={`min-w-[435px] h-screen bg-[white] overflow-auto ${styles.customScrollbar}`}
       >
         <div className="flex flex-col items-center w-full h-screen pt-[9px] ">
           <div className="flex justify-start items-center w-full mb-[18px] ml-[9px]">

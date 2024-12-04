@@ -15,7 +15,7 @@ export const LandingPage = () => {
     }))
   );
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen bg-[skyblue]">
+    <div className="flex flex-col justify-center items-center w-full h-screen bg-[#F5F5F5]">
       <section className="flex justify-between items-center mb-[150px]">
         <div className="flex justify-center items-center h-[190px] mr-[32px]">
           <Link to="https://archive.md/VMbiP" target="_blank">

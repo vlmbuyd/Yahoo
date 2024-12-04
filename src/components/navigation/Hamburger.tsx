@@ -11,7 +11,7 @@ import pinIcon from "@/assets/hamburger-icons/pin.svg";
 import categoryData from "@/mock/sidebar-category-list.json";
 import { sideBarType } from "@/types/sidebar-category";
 import { Link } from "react-router-dom";
-import styles from "./SheetContent.module.css";
+import styles from "@/styles/SheetContent.module.css";
 
 export const Hamburger = () => {
   const categoryGroups: sideBarType[] = categoryData.filter(

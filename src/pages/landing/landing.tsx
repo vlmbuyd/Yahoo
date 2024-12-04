@@ -44,7 +44,7 @@ export const LandingPage = () => {
                 style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
               ></div>
               <h2 className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-[60px] font-bold text-[white]">
-                Before
+                After
               </h2>
             </div>
           </Link>

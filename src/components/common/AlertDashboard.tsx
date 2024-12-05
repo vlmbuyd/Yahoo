@@ -85,10 +85,11 @@ export const AlertDashboard = () => {
             </span>
           </div>
         </div>
-        <Link to="https://baseball.yahoo.co.jp/npb/">
-          <span className="w-full text-[13px] font-light text-right text-[#333333] underline">
-            もっと見る
-          </span>
+        <Link
+          to="https://baseball.yahoo.co.jp/npb/"
+          className="w-full text-[13px] font-light text-right text-[#333333] underline"
+        >
+          <span>もっと見る</span>
         </Link>
       </div>
     </section>

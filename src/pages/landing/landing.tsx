@@ -16,7 +16,7 @@ export const LandingPage = () => {
   );
   return (
     <div className="flex flex-col justify-center items-center w-full h-screen bg-gradient-to-b from-[#ffffff] from-0% via-[#FCFCFC] via-38% to-[#F8F9FA] ">
-      <section className="flex justify-between items-center mb-[150px]">
+      <section className="flex justify-between items-center w-[1077px] mb-[150px]">
         <div className="flex justify-center items-center h-[190px] mr-[32px]">
           <Link to="https://archive.md/VMbiP" target="_blank">
             <div className="relative w-[523px] h-[190px] rounded-[18px] mr-[50px]">
@@ -51,7 +51,7 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      <section className="flex">
+      <section className="flex w-[1077px]">
         <Link to="/main" onClick={() => setVersion("pagination")}>
           <div className="w-[245px] h-[290px] pt-[48px] pl-[21px] mr-[50px] mb-[30px] rounded-[12px] bg-[#06B6FD] overflow-hidden">
             <h2 className="text-[30px] font-semibold mb-[50px]">

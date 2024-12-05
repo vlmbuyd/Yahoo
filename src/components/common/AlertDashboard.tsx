@@ -1,5 +1,6 @@
 import sportTeam1 from "@/assets/alert-dashboard/sport-team-1.svg";
 import sportTeam2 from "@/assets/alert-dashboard/sport-team-2.svg";
+import { Link } from "react-router-dom";
 
 export const AlertDashboard = () => {
   return (
@@ -84,9 +85,11 @@ export const AlertDashboard = () => {
             </span>
           </div>
         </div>
-        <span className="w-full text-[13px] font-light text-right text-[#333333] underline">
-          もっと見る
-        </span>
+        <Link to="https://baseball.yahoo.co.jp/npb/">
+          <span className="w-full text-[13px] font-light text-right text-[#333333] underline">
+            もっと見る
+          </span>
+        </Link>
       </div>
     </section>
   );

@@ -14,9 +14,14 @@ export const AlertDashboard = () => {
           borderColor: "rgba(77, 69, 214, 0.3)",
         }}
       >
-        <strong className="text-[15px] font-bold text-[#333333]">
-          交通知らせ
-        </strong>
+        <Link
+          to="https://transit.yahoo.co.jp/diainfo/pref/13"
+          className="hover:underline"
+        >
+          <strong className="text-[15px] font-bold text-[#333333]">
+            交通知らせ
+          </strong>
+        </Link>
         <div className="flex">
           <strong className="block mr-[3px] text-[13px] font-bold text-[#333333] underline">
             1件

@@ -19,28 +19,28 @@ export const LandingPage = () => {
       <section className="flex justify-between items-center w-[1077px] mb-[150px]">
         <div className="flex justify-center items-center h-[190px] mr-[32px]">
           <Link to="https://archive.md/VMbiP" target="_blank">
-            <div className="relative w-[523px] h-[190px] rounded-[18px] mr-[50px]">
+            <div className="group relative w-[523px] h-[190px] rounded-[18px] mr-[50px]">
               <img
                 src={beforeImg}
                 alt="before-image"
                 className="w-full h-auto"
               />
               <div
-                className="absolute top-0 left-0 w-full h-[191px] rounded-[18px] hover:opacity-[70%]"
+                className="absolute top-0 left-0 w-full h-[191px] rounded-[18px] group-hover:opacity-[70%]"
                 style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
               ></div>
-              <h2 className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-[60px] font-bold text-[white]">
+              <h2 className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-[60px] font-bold text-[white] ">
                 Before
               </h2>
             </div>
           </Link>
         </div>
-        <div className="flex justify-center items-center h-[190px] mr-[32px]">
+        <div className="group flex justify-center items-center h-[190px] mr-[32px]">
           <Link to="/develop" target="_blank">
             <div className="relative w-[523px] h-[190px] rounded-[18px] mr-[50px]">
               <img src={afterImg} alt="after-image" className="w-full h-auto" />
               <div
-                className="absolute top-0 left-0 w-full h-[191px] rounded-[18px] hover:opacity-[70%]"
+                className="absolute top-0 left-0 w-full h-[191px] rounded-[18px] group-hover:opacity-[70%]"
                 style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
               ></div>
               <h2 className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-[60px] font-bold text-[white]">

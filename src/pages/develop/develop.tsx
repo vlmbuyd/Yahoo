@@ -4,7 +4,7 @@ import { RealTimeSearchTrends } from "@/components/common/RealTimeSearchTrends";
 import { AlertDashboard } from "@/components/common/AlertDashboard";
 import { BannerAds } from "@/components/banner-ads/BannerAds";
 import { Header } from "@/components/header/Header";
-import { LoadMore } from "@/components/reco-news-feed/LoadMore";
+import { Pagination } from "@/components/reco-news-feed/Pagination";
 
 export const DevelopPage = () => {
   return (
@@ -16,7 +16,7 @@ export const DevelopPage = () => {
         <section className="flex flex-col flex-1 gap-[24px] min-w-[730px] max-w-[764px]">
           <CategoryNewsList />
           <BannerAds banner_num={1} />
-          <LoadMore />
+          <Pagination />
         </section>
 
         <section className="flex flex-col flex-1 gap-[24px] min-w-[290px] max-w-[384px]">

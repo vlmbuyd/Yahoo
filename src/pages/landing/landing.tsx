@@ -36,7 +36,7 @@ export const LandingPage = () => {
           </Link>
         </div>
         <div className="group flex justify-center items-center h-[190px] mr-[32px]">
-          <Link to="/develop" target="_blank">
+          <Link to="/develop" onClick={() => setVersion("develop")}>
             <div className="relative w-[523px] h-[190px] rounded-[18px] mr-[50px]">
               <img src={afterImg} alt="after-image" className="w-full h-auto" />
               <div

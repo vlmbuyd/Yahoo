@@ -48,7 +48,7 @@ export const Header = () => {
           </div>
         )}
 
-        {version === "hamburger" && (
+        {(version === "hamburger" || version === "develop") && (
           <div className="flex">
             <button>
               <Hamburger />
